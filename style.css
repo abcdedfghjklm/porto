@@ -1,0 +1,995 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* styles.css */
+
+/* root::{
+  color: #060233;
+  color: rgb(218, 144, 7);
+} */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #021526;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  margin: 0;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #FF8225;
+}
+.logo span:hover {
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: #FF8225;
+  color: #fff;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+/* /////////////// */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+  position: relative;
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -8px;
+  position: relative;
+}
+
+/* .search-bar {
+  display: flex;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #777;
+} */
+
+/* ////////////////////////////header//////////////// */
+.main{
+  background-color: #dbdee0;
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+}
+.Box1, .Box2{
+  /* border: 8px solid rgb(71, 4, 240); */
+  /* background-color: #1b07f4; */
+  width: 800px;
+  height: 700px;
+  margin: 2%;
+}
+.Box1{
+  flex-basis: 50%;
+  /* position: relative; */
+  
+}
+.Title{
+  margin-Top: 10%;
+  text-align: center;
+  padding: 0px 10px;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.Title:hover{
+ color: #FF8225;
+ cursor: pointer;
+}
+.Title2{
+  /* margin-Top: 10%; */
+  text-align: center;
+  padding: 0px 10px;
+  font-size: 3rem;
+  color: orange;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+.Title2:hover{
+color: #021526;
+/* font-weight: 900; */
+cursor: pointer;
+}
+.Paragraph{
+  /* margin-Top: 10%; */
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+.section3 .Box4 .Paragraph{
+ font-size: 1.7rem;
+ font-weight: 300;
+ line-height: 2;
+}
+.Box1 .btns{
+  width: 160px;
+  height: 60px;
+  margin: 10px 30px;
+  border-radius: 12px;
+  border: 1px solid #FF8225;
+  background-color: #021526;
+  color: #fff;
+  font-weight: 900;
+}
+.Box1 .btns:hover{
+ background-color: #fff;
+ color: #021526;
+ border: 2px solid #021526;
+
+}
+.Box2 img{
+  width: 700px;
+  height: 700px;
+  margin-top: -15px;
+  margin-left: 6%;
+}
+.Box2 img:hover{
+  transform: scale(1.1);
+ transition: ease-in-out;
+}
+
+/* ..............................................main............................ */
+.section3{
+  display: flex;
+  width: 1900px;
+  height: 700px;
+  margin: 6px;
+  background-image: url(images/back2.jpg);
+  /* margin-left: 200px; */
+  /* background-color: #060233; */
+  /* border: 2px solid #060233; */
+}
+.Box3, .Box4{
+  width: 400px;
+  height: 600px;
+  /* background-color: #060233; */
+  /* border: 2px solid #060233; */
+  margin: 10px;
+}
+.Box4{
+  flex-basis: 70%;
+}
+.Box4 .Title{
+  color: orange;
+}
+.Box4 .Title:hover{
+  color: #fff;
+}
+.Box3 img{
+ width: 430px;
+ height: 600px;
+ border: 6px solid orange;
+}
+.Box4 .Paragraph{
+  font-size: 1rem;
+  font-weight: 100;
+  color: rgb(239, 236, 236);
+}
+.Box4 .btn{
+  width: 200px;
+  height: 50px;
+  background-color: #f0eff6;
+  margin: 10px;
+  margin-left: 30%;
+  color: #021526;
+  font-weight: 900;
+}
+.Box4 .btn:hover{
+  background-color: orange;
+  color: #021526;
+}
+/* .............................................skills................................... */
+.skill{
+  width: 1200px;
+  height: 480px;
+  /* border: 2px solid #060233; */
+  padding: 7%;
+  margin: 10px;
+  display: flex;
+}
+.Box5, .Box6, .Box7, .Box8{
+  background-color: #021526;
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 26px;
+  border: 2px solid #FF8225;
+  /* position: absolute; */
+  box-shadow: 5px 5px 10px rgba(219, 243, 2, 0.3);
+}
+.skill-text{
+  font-size: 3rem;
+  margin-top: -5%;
+ margin-left: 30%;
+ position: absolute;
+ font-family: "Jost";
+}
+.skill-text:hover{
+ color: orange;
+ cursor: pointer;
+}
+.skill i{
+  font-size: 4rem;
+  color: white;
+  margin: 25%;
+  padding: 15px;
+}
+.skill i:hover{
+  color: orange;
+}
+.title{
+  font-size: 1.4rem;
+  margin: 10px;
+  margin-top: -26px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.Telegraph{
+  font-size: 0.9rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: orange;
+  cursor: pointer;
+}
+.Telegraph:hover{
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out;
+}
+.readbtn{
+  width: 200px;
+  height: 50px;
+  background-color: rgb(239, 237, 234);
+  margin: 20px;
+  margin-left: 37px;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: none;
+}
+.readbtn:hover{
+  background-color: #FF8225;
+  color: #fff;
+  cursor: pointer;
+}
+/* .........................................services................................. */
+.services{
+  width: 1900px;
+  height: 520px;
+  background-image: url(images/back3.jpg);
+  /* background-color: #FF8225; */
+  /* border: 2px solid #060233; */
+  padding: 7%;
+  margin: 10px;
+}
+.Box9, .Box10{
+  width: 1200px;
+  height: 300px;
+  /* background-color: #060233; */
+  margin: 10%;
+  margin-top: -7%;
+  margin-left: -4%;
+  /* border: 2px solid #060233; */
+}
+.Box9{
+  display: flex;
+}
+
+.Box9 .skill-text{
+  color: orange;
+  margin-top: -7%;
+}
+.Box9 .skill-text:hover{
+  color: #021526;
+}
+.Box91, .Box92, .Box93, .Box94{
+  width: 400px;
+  height: 250px;
+  margin: 10px;
+  /* background-color: #060233; */
+  /* border: 2px solid #5b09f2; */
+  /* position: absolute; */
+}
+.iimg2{
+  width: 280px;
+  height: 250px;
+  /* margin: 10px; */
+}
+.iimg2:hover{
+transform: scale(1.1);
+}
+.text-title{
+  font-size: 1rem;
+  color: white;
+}
+.Box9 a{
+  color: white;
+}
+.Box10 .skill-text{
+  color: orange;
+  margin-top: -44px;
+  font-size: 2rem;
+}
+.Box10 .skill-text:hover{
+  color: white;
+}
+.Box10{
+  display: flex;
+}
+.Box10 a{
+  color: white;
+}
+/* ........................................Showcase.......................................... */
+.showcase{
+  width: 1900px;
+  height: 180px;
+  /* border: 2px solid #060233; */
+  padding: 7%;
+  margin: 26px;
+  display: flex;
+}
+.Boxcase{
+  width: 1400px;
+  height: 300px;
+  margin-top: -6%;
+  margin-left: -6%;
+  background-image: url(images/back4.jpg);
+  /* background-color: #060233; */
+  border: 5px solid #FF8225;
+}
+.Boxcase .readbtn{
+  background-color: orange;
+  color: #fff;
+  font-size: 2rem;
+  margin: 10%;
+ margin-left: 40%;
+}
+.Boxcase a{
+  text-decoration: none;
+  color:white;
+}
+.Boxcase a:hover{
+  text-decoration: none;
+  color:orange;
+}
+.Boxcase .readbtn:hover{
+  background-color: #fff;
+  color: orange;
+  border: 2px solid orange;
+  cursor: pointer;
+}
+/* ..........................................................contact page.............................. */
+.main2{
+  background-color: #dbdee0;
+  height: 30vh;
+  /* width: 100%; */
+  display: flex;
+}
+.contact-page{
+  width: 2000px;
+  height: 500px;
+  /* background-color: #021526; */
+  /* border: 2px solid #021526; */
+  margin-top: -20%;
+  display: flex;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 330px;
+  padding: 10px 10px;
+  margin: 20px;
+ border: 2px solid #021526;
+ flex-basis: 50%;
+ background-color: beige;
+ border-radius: 12px;
+}
+input,select{
+  width: 500px;
+  padding: 10px 10px;
+  margin: 10px;
+}
+label{
+  font-size: 1rem;
+  color: #021526;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* .form .contact-tn{
+  width: 580px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  margin: 10px;
+  margin-left: 0%;
+  margin-top: 18px;
+  background-color: #FF8225;
+  color: #f5f5f6;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 15px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+} */
+.contact-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF8225;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 15px;
+
+}
+
+.contact-btn:hover {
+  background-color: #021526;
+
+}
+.contact:hover{
+  cursor: pointer;
+}
+.links{
+  /* background-color: #021526; */
+  flex-basis: 50%;
+  width: 700px;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid #FF8225; */
+}
+.links i{
+  /* margin: 20%; */
+  font-size: 2rem;
+  text-align: center;
+  padding: 4% 30px;
+  margin: 10px;
+  margin-top: 1%;
+  position: relative;
+  margin-left: -35%;
+  cursor: pointer;
+  color: orange;
+}
+.links i:hover{
+  color: #021526;
+}
+.linkicon{
+  font-size: 2rem;
+  text-align: center;
+  margin: -30px;
+  margin-bottom: -1%;
+  /* padding: 10px; */
+  margin-top: -5%;
+  margin-left: -35%;
+
+  position: relative;
+}
+.links a{
+  color: #021526;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+/* ..........................................foooter.................... */
+.footer{
+  height: 30vh;
+  background-color: #021526;
+  /* margin-top: -30%; */
+  display: flex;
+}
+.tbox1,.tbox2,.tbox3,.tbox4{
+  width: 250px;
+  height: 100px;
+  /* border: 2px solid #f5f5f6; */
+  /* background-color: #FF8225; */
+  margin: 2%;
+  margin-top: 5%;
+  margin-right: auto;
+  margin-left: auto;
+ justify-content: space-between;
+}
+.tbox1-text{
+  color: #fff;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+.footer i{
+  /* font-family: sans-serif; */
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.footer i:hover{
+  color: orange;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar ul li a {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar ul li a:hover {
+    background-color: #FF8225;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+/* Hide the menu by default on mobile */
+/* @media (max-width: 768px) { */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+}
+
+  /* ...............................main................................................. */
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+    
+    .Box1, .Box2 {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    
+    .Title {
+      font-size: 2.5rem;
+      margin-top: 5%;
+    }
+    
+    .Title2 {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+   
+    .Paragraph {
+      font-size: 0.9rem;
+    }
+    
+    .section3 .Box4 .Paragraph {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+    
+    .Box1 .btns {
+      width: 140px;
+      height: 50px;
+      margin: 10px 15px;
+    }
+    
+    .Box2 img {
+      width: 90%;
+      height: auto;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  }
+/* ..................................section 3................................................. */
+@media (max-width: 768px) {
+  .section3 {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .Box3, .Box4 {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .Box3 img {
+    width: 90%;
+    height: auto;
+    margin: 0;
+  }
+
+  .Box4 {
+    flex-basis: 100%;
+  }
+
+  .Box4 .Title {
+    font-size: 1.5rem;
+  }
+
+  .Box4 .Paragraph {
+    font-size: 0.9rem;
+  }
+
+  .Box4 .btn {
+    width: 180px;
+    height: 45px;
+    margin: 20px auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skill {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Auto height to fit content */
+    padding: 5%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column; /* Stack boxes vertically */
+  }
+
+  .Box5, .Box6, .Box7, .Box8 {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Auto height to fit content */
+    margin: 10px 0; /* Vertical margin to separate boxes */
+    border-radius: 26px;
+    border: 2px solid #FF8225;
+    background-color: #021526;
+    box-shadow: 5px 5px 10px rgba(219, 243, 2, 0.3);
+  }
+}
+@media screen and (max-width: 768px) {
+  .skill-text {
+    font-size: 2rem; /* Smaller font size for mobile */
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center; /* Center the text on mobile */
+    position: static; /* Remove absolute positioning */
+  }
+
+  .skill i {
+    font-size: 3rem; /* Adjust icon size for mobile */
+    margin: 0;
+    padding: 10px;
+    display: block;
+    text-align: center; /* Center the icons */
+  }
+
+  .title {
+    font-size: 1.2rem; /* Slightly smaller font size */
+    margin: 10px;
+    margin-top: 0; /* Adjust top margin */
+    text-align: center; /* Center the title text */
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .Telegraph {
+    font-size: 0.8rem; /* Adjust font size for mobile */
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: orange;
+    cursor: pointer;
+  }
+
+  .readbtn {
+    width: 100%; /* Full width on mobile */
+    height: 45px; /* Adjust button height */
+    background-color: rgb(239, 237, 234);
+    margin: 20px 0;
+    border-radius: 25px;
+    font-size: 1rem;
+    border: none;
+    text-align: center; /* Center the button text */
+  }
+}
+@media screen and (max-width: 768px) {
+  .services {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    margin: 10px;
+    background-size: cover; /* Ensure the background image fits */
+  }
+
+  .Box9, .Box10 {
+    width: 90%; /* Full width on mobile */
+    height: auto;
+    margin: 20px 0; /* Vertical margin */
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .Box9 .skill-text, .Box10 .skill-text {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+    margin-top: 10px; /* Adjust margin */
+    text-align: center; /* Center text */
+  }
+
+  .Box91, .Box92, .Box93, .Box94 {
+    width:90%;
+    height: auto;
+    margin: 10px 10px; /* Separate boxes vertically */
+  }
+
+  .iimg2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-title {
+    font-size: 0.9rem; /* Slightly smaller text */
+    text-align: center; /* Center the text */
+  }
+}
+@media screen and (max-width: 768px) {
+  .showcase {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Auto height to fit content */
+    padding: 15%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .Boxcase {
+    width: 90%; /* Full width on mobile */
+    height: auto; /* Auto height to fit content */
+    margin-top: 10px;
+    margin-left: 4px;
+    background-size: cover; /* Ensure the background image fits */
+    border: 2px solid #FF8225;
+  }
+
+  .Boxcase .readbtn {
+    background-color: orange;
+    color: #fff;
+    font-size: 1.5rem; /* Adjust font size for mobile */
+    margin: 10px auto; /* Center the button horizontally */
+    width: 90%; /* Full width on mobile */
+    text-align: center; /* Center the text */
+    margin-left: 10px;
+  }
+
+  .Boxcase a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .Boxcase a:hover {
+    text-decoration: none;
+    color: orange;
+  }
+
+  .Boxcase .readbtn:hover {
+    background-color: #fff;
+    color: orange;
+    border: 2px solid orange;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main2 {
+    background-color: #dbdee0;
+    height: auto; /* Auto height to fit content */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px; /* Add padding */
+  }
+
+  .contact-page {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Auto height to fit content */
+    margin-top: 0; /* Remove negative margin */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Add padding */
+  }
+
+  .form {
+    width: 90%; /* Full width on mobile */
+    height: auto; /* Auto height to fit content */
+    margin: 10px 0; /* Adjust margin */
+    padding: 20px; /* Increase padding */
+    border: 2px solid #021526;
+    border-radius: 12px;
+    background-color: beige;
+  }
+
+  input, select {
+    width: 90%; /* Full width on mobile */
+    padding: 10px;
+    margin: 10px 0; /* Adjust margin for spacing */
+  }
+
+  label {
+    font-size: 1rem;
+    color: #021526;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .contact-btn {
+    width: 90%; /* Full width on mobile */
+    padding: 15px; /* Adjust padding */
+    font-size: 1.5rem; /* Adjust font size */
+    text-align: center;
+    letter-spacing: 5px; /* Adjust letter spacing */
+  }
+
+  .links {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Auto height to fit content */
+    margin: 10px 0; /* Adjust margin */
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .links i {
+    font-size: 1.5rem; /* Adjust icon size */
+    margin: 10px 0; /* Adjust margin */
+    text-align: left; /* Align text left */
+    margin-left: 0; /* Remove negative margin */
+    padding: 10px; /* Add padding */
+  }
+
+  .linkicon {
+    font-size: 1.5rem; /* Adjust icon size */
+    margin: 10px 0; /* Adjust margin */
+    text-align: left; /* Align text left */
+    margin-left: 0; /* Remove negative margin */
+  }
+
+  .links a {
+    color: #021526;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    height: auto; /* Adjust height to fit content */
+    background-color: #021526;
+    flex-direction: column; /* Stack content vertically */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .tbox1, .tbox2, .tbox3, .tbox4 {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Auto height to fit content */
+    margin: 10px 0; /* Adjust margins for spacing */
+    display: flex; /* Maintain flex display */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items */
+    justify-content: center; /* Center items */
+  }
+
+  .tbox1-text {
+    color: #fff;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px; /* Slightly reduce letter-spacing for readability */
+    text-align: center; /* Center text */
+  }
+
+  .footer i {
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center; /* Center icons */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .footer i:hover {
+    color: orange;
